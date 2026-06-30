@@ -83,7 +83,7 @@ on:
         description: "启用 Droidspaces 容器 NTSync 支持（需启用 Droidspaces）"
         required: false
         type: boolean
-        default: trur
+        default: true
 
       # ==================== 功能开关 ====================
       use_zram:
@@ -101,6 +101,11 @@ on:
         required: false
         type: boolean
         default: false
+      susfs_commit:
+        description: “指定 SUSFS commit hash”
+        required: false
+        type: string
+        default: 
       cancel_susfs:
         description: "禁用 SUSFS"
         required: true
