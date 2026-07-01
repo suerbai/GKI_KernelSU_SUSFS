@@ -40,6 +40,11 @@ on:
         default: ReSukiSU
 
       # ==================== 可选配置 ====================
+      susfs_commit:
+        description: “指定 SUSFS commit hash”
+        required: false
+        type: string
+        default: 
       version:
         description: "自定义版本名 (可选)"
         required: false
@@ -101,11 +106,6 @@ on:
         required: false
         type: boolean
         default: false
-      susfs_commit:
-        description: “指定 SUSFS commit hash”
-        required: false
-        type: string
-        default: 
       cancel_susfs:
         description: "禁用 SUSFS"
         required: true
